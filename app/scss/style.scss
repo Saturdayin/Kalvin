@@ -6,3 +6,81 @@ html{
 *::after{
     box-sizing: inherit;
 }
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+
+}
+.header{
+    background-color: #f1f1f1;
+    padding-top: 50px;
+    
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    &__menu{
+        &-list{
+            li{
+            display: inline-block;
+            }
+            li+ li{
+                margin-left: 30px;
+            }
+            a{
+                color: #222222;
+                font-weight: 500;
+                &:hover{
+                    color: #5c5c5c;
+                    transition: 0.5s;
+                }
+            }
+            
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        margin-top: 200px;
+    }
+    &__title{
+        color: #000;
+        font-size: 44px;
+        line-height: 62px;
+        font-weight: 600;
+        max-width: 470px;
+        margin-bottom: 20px;
+        padding-right: 15px;
+    }
+    &__text{
+        max-width: 570px;
+        padding-right: 15px;
+    }
+
+}
+
