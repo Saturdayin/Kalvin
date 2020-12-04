@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
 .header{
     background-color: #f1f1f1;
     padding-top: 50px;
-    
+    margin-bottom: 20px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -64,23 +64,60 @@ h1,h2,h3,h4,h5,h6{
     &__wrapper{
         display: flex;
         justify-content: space-between;
+        height: 625px;
+        &-imgages{
+            img{
+                padding-left: 10px;
+            }
+           
+        }
     }
     &__info{
         margin-top: 200px;
+        max-width: 570px;
+        padding-right: 15px;
     }
     &__title{
         color: #000;
         font-size: 44px;
         line-height: 62px;
         font-weight: 600;
-        max-width: 470px;
         margin-bottom: 20px;
-        padding-right: 15px;
     }
-    &__text{
-        max-width: 570px;
-        padding-right: 15px;
+}
+.services{
+    margin-bottom: 100px;
+    &__title{
+        font-size: 38px;
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 50px;
+        span{
+            color: #f9ba48;
+        }
     }
-
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 360px;
+        
+        &-images{
+            margin-bottom: 20px;
+        }
+        &-title{
+            color: #000;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-right: 10px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            padding-right: 10px;
+        }
+    }
 }
 
