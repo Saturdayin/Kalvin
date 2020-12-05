@@ -120,4 +120,80 @@ h1,h2,h3,h4,h5,h6{
         }
     }
 }
+.advantages{
+    background-color: #f1f1f1;
+    padding-top: 80px 0px 130px 0px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    &__title{
+        color: #000;
+        font-size: 36px;
+        line-height: 50px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 100px 10px 5px 1px;
+        margin-bottom: 40px;
+        span{
+            color: #ffae00;
+        }
+    }
+    &__info{
+        margin-right: 50px;
+        padding-top: 70px;
+        padding-bottom: 180px;
+        width: 470px;
+        &-item{
+            
+        }
+        &-title{
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 20px;
+            margin-top: 40px;
+            position: relative;
+            padding: 0px 10px 0px 65px; 
+            span{
+                position: absolute;
+                width: 37px;
+                height: 4px;
+                background-color: #000;
+                left: 0;
+                top: 12px;
+            }
+           
+        }
+        &-text{
+            padding: 0px 10px 5px 65px;
+        }
+    }
+    &__images{
+        position: relative;
+        max-height: 720px;
+        
+        &-1{
+            position: absolute;
+            right: 189px;
+            top: 115px;
+        }
+        &-2{
+            position: absolute; 
+            z-index: 1;
+            right: 0;
+            bottom: -95px;
+            // transform: translateX(8%);
+            // transform: translateY(-92%);
+        }
+        &-3{
+            position: absolute;
+            right: -35px;
+            top: 245px;
+        }
+    }
+    
+}
 
