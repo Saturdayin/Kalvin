@@ -1,0 +1,217 @@
+@media (max-width: 1220px){
+    .advantages{
+        padding-top: 30px;
+        &__title{
+            padding-top: 0px;
+        }
+        &__images{
+            &-1{
+                right: 190px;
+                top: 105px;
+                img{
+                    width: 300px;
+                }
+                
+            }
+            &-2{
+                right: 35px;
+                top: 365px;
+                img{
+                    width: 200px;
+                }
+                
+            }
+            &-3{
+                right: 0px;
+                top: 150px;
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .works{
+        &__inner{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: repeat(3, 1fr);
+        }
+    }
+    .testimonials{
+        &__title{
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1050px){
+    .services{
+        
+        &__items{
+            flex-wrap: wrap;
+            
+        }
+        &__item{
+            margin-bottom: 20px;
+            max-width: 400px;
+
+        }
+    }
+    .contact{
+        &__form{
+            textarea{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 970px){
+    .header{
+        
+        
+        &__info{
+            margin-top: 0px;
+        }
+        &__wrapper{
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            
+            &-images{
+        
+                position: absolute;
+                bottom: -7px;
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .advantages{
+        &__info{
+            padding-top: 0px;
+            padding-bottom: 10px;
+            width: 100%;
+            margin-right: 0px;
+        }
+        &__images{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 830px){
+    .services{
+        text-align: center;
+        &__items{
+            justify-content: center;
+        }
+        &__item{
+            max-width: 100%;
+        }
+       
+    }
+}
+
+@media (max-width: 670px){
+    .campaigns{
+        display: none;
+    }
+    .contact{
+        
+        &__form{
+            &-row{
+                flex-wrap: wrap;
+                input{
+                    width: 100%;
+                    & + input{
+                        margin-left: 0px;
+                    }
+                }
+                
+            }
+            textarea{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .header__menu-btn{
+        display: block;
+    }
+    .header__menu ul{
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;
+    }
+    .header__menu li{
+        display: block;
+        text-align: center;
+        
+        border-bottom: 1px solid;
+    }
+    .header__menu li + li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .header__menu a{
+        display: block;
+    }
+    .header__wrapper-images img {
+        width: 60%;
+    }
+    .works{
+        &__inner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: repeat(6, 1fr);
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .contact{
+        padding-top: 70px;
+        &__form{
+            &-title{
+                line-height: 32px;
+            }
+            form{
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer{
+        &__inner{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 451px){
+    .footer{
+        &__inner{
+            justify-content: center;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 600px){
+    .header__menu ul{
+        display: block !important;
+    } 
+}
